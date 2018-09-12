@@ -1,0 +1,3 @@
+<view wx:if="{{noMore}}" class="no-more">
+  {{noMoreText}}
+</view>

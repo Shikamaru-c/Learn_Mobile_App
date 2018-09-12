@@ -1,0 +1,21 @@
+<!--pages/my/index.wxml-->
+<view class="vip">
+  <view class="vip-header">
+    <image src="/images/avatar.jpg"></image>
+    <text>{{username}}</text>
+  </view>
+  <view class="vip-info">
+    <text bindtap="handleShowPopuplayer">我的消息</text>
+    <text>我的关注</text>
+  </view>
+  <view class="site-info">
+    <text>常见问题</text>
+    <text>意见反馈</text>
+    <text>关于我们</text>
+    <text>在线客服</text>
+  </view>
+  <button class="sign" bindtap="handleSign">
+    {{signInOrOut}}
+  </button>
+  <popup-layer id="popup-layer" />
+</view>

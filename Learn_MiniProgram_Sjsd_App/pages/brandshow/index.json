@@ -1,0 +1,8 @@
+{
+  "backgroundColor": "#f6f6f6",
+  "usingComponents": {
+    "popup-layer": "/components/popup-layer/index",
+    "consult-form": "/components/consult-form/index",
+    "html-content": "/components/html-content/index"
+  }
+}

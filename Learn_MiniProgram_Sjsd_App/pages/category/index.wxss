@@ -1,0 +1,31 @@
+.category {
+  background: #f6f6f6;
+}
+
+/*  brands-table  */
+.brands-table {
+  background: #fff;
+  border-top: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.brands-table > view {
+  display: flex;
+  justify-content: space-between;
+}
+.brands-table > view > navigator {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-left: 1px solid rgb(238, 238, 238);
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.brands-table > view > navigator image {
+  width: 90%;
+  height: 72px;
+}
+.brands-table > view > navigator:first-child {
+  border-left: none;
+}
+.brands-table > view:last-child > navigator {
+  border-bottom: none;
+}

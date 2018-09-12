@@ -1,0 +1,51 @@
+.index {
+  background: #f6f6f6;
+}
+
+/*  nav-bar  */
+.nav-bar {
+  padding: 20px 0;
+  background: #fff;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar li {
+  width: 20%;
+  text-align: center;
+}
+.nav-bar li image {
+  width: 90%;
+  height: 72px;
+}
+
+/*  help-buttons  */
+.help-buttons {
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 3px;
+}
+.help-button {
+  width: 25%;
+  box-sizing: border-box;
+  margin-right: 3px;
+  padding: 14px 3px;
+  text-align: center;
+  background: #fff;
+}
+.help-button-main {
+  color: #dd524d;
+}
+.help-button-detail {
+  display: block;
+  margin-top: 14px;
+  padding: 10px 2px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  background: #dd524d;
+  color: #fff;
+}

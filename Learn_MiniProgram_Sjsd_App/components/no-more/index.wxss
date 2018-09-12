@@ -1,0 +1,8 @@
+/* components/no-more/index.wxss */
+.no-more {
+  display: block;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}

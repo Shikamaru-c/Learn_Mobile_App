@@ -1,0 +1,34 @@
+body, html {
+  line-height: 1;
+  font-weight: 200;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial,
+    sans-serif;
+}
+
+.clearfix {
+  display: inline-block;
+  &:after {
+    display: block;
+    content: ".";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+  
+
+@media (min-device-pixel-ratio: 1.5) {
+  .boder-1px {
+    &::after {
+      transform: scaleY(0.7);
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2) {
+  .boder-1px {
+    &::after {
+      transform: scaleY(0.5);
+    }
+  }
+}

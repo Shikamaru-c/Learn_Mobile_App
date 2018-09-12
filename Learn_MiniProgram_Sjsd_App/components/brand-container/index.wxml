@@ -1,0 +1,23 @@
+<navigator url="{{'/pages/brandshow/index?catid=' + brand.catid + '&id=' + brand.id}}" class="brand-container">      
+  <view class="brand-left">
+    <image class="brand-thumb" src="{{brand.thumb}}"></image>
+    <text class="brand-sqjm">已申请加盟：<text class="brand-sqjm-num">{{brand.sqjm}}</text></text>
+  </view>
+  <view class="brand-right">
+    <text class="brand-title">{{brand.title}}</text>
+    <text>所属行业：{{brand.catname}}</text>
+    <text>门店数量：{{brand.dcounts}}家</text>
+    <text>投资金额：<text class="brand-jmprice-num">{{brand.jmprice}}</text>万元</text>
+    <view class="brand-jmjs">
+      <view class="brand-jmjs-inner">
+        <text class="brand-jmjs-left">现金</text>
+        <text class="brand-jmjs-right">加盟即送{{brand.price}}元</text>
+      </view>
+    </view>
+    <view class="brand-tags">
+      <text class="brand-red-tag">品牌认证</text>
+      <text class="brand-blue-tag">加盟扶持</text>
+    </view>
+    <button class="brand-consult">咨询</button>
+  </view>
+</navigator>

@@ -1,0 +1,37 @@
+.signup-form {
+  display: block;
+  padding: 14px;
+}
+.signup-form view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.signup-form input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+}
+.signup-form button {
+  font-size: 15px;
+  padding: 5px 0;
+  background: #007aff;
+  border: none;
+  color: #fff;
+}
+.signup-form .code-button {
+  width: 25%;
+}
+.signup-form .code-input {
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+.protocol {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}

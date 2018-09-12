@@ -1,0 +1,27 @@
+<view class="reset-password">
+  <form class="reset-password-form" bindsubmit="handleSubmitReset">
+    <view>
+      <input type="text"
+        placeholder="请输入手机号"
+        name="username"
+        bindblur="handleChangeUsername"
+      ></input>
+    </view>
+    <view>
+      <input type="text"
+        placeholder="验证码"
+        name="code"
+        class="code-input"
+      >
+      </input>
+      <button class="code-button" bindtap="handleGetCode">发送</button>
+    </view>
+    <view>
+      <input type="password"
+        placeholder="设置密码：字母加数字至少6位"
+        name="password"
+      ></input>
+    </view>
+    <button form-type="submit" class="submit-button">确定</button>
+  </form>
+</view>

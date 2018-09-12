@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "项目分类",
+  "backgroundColor": "#f6f6f6",
+  "usingComponents": {
+    "item-title": "/components/item-title/index"
+  }
+}

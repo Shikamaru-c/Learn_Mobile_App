@@ -1,0 +1,17 @@
+/*  item-title  */
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.item-title .main-title {
+  display: block;
+  height: 30px;
+  padding-left: 14px;
+  border-left: 3px solid #dd524d;
+}
+.item-title .sub-title-num {
+  color: red;
+}

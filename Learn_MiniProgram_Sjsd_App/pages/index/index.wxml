@@ -1,0 +1,108 @@
+<!--index.wxml-->
+<view class="index">
+  <search-bar />
+  <swiper 
+  indicator-dots=true
+  autoplay=true
+  circular=true
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item[1].imageurl}}" style="width: 100%;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="nav-bar">
+    <ul>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=11">
+        <image mode="aspectFit" src="/images/ico1.png"></image>
+        美食
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=12">
+          <image mode="aspectFit" src="/images/ico2.png"></image>
+          火锅
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=13">
+          <image mode="aspectFit" src="/images/ico3.png"></image>        
+          快餐
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=14">
+          <image mode="aspectFit" src="/images/ico4.png"></image>        
+          小吃
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=15">
+          <image mode="aspectFit" src="/images/ico5.png"></image>        
+          麻辣烫
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=16">
+          <image mode="aspectFit" src="/images/ico6.png"></image>        
+          饮品
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=17">
+          <image mode="aspectFit" src="/images/ico7.png"></image>        
+          奶茶
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=18">
+          <image mode="aspectFit" src="/images/ico8.png"></image>        
+          咖啡
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/brandlist/index?catid=19">
+          <image mode="aspectFit" src="/images/ico9.png"></image>        
+          水果茶
+        </navigator>
+      </li>
+      <li>
+        <navigator url="/pages/category/index" open-type="switchTab">
+          <image mode="aspectFit" src="/images/ico10.png"></image>      
+          全部
+        </navigator>
+      </li>
+    </ul>
+  </view>
+  <item-title mainTitle="加盟我帮你" />
+  <view class="help-buttons">
+    <view class="help-button" bindtap="handleOpenPopupLayer">
+      <text>帮你 <text class="help-button-main">挑项目</text></text>
+      <text class="help-button-detail">找加盟顾问聊一聊</text>
+    </view>
+    <view class="help-button" bindtap="handleOpenPopupLayer">
+      <text>帮你 <text class="help-button-main">对接</text></text>
+      <text class="help-button-detail">找招商经理问问</text>      
+    </view>
+    <view class="help-button" bindtap="handleOpenPopupLayer">
+      <text>帮你 <text class="help-button-main">砍价</text></text>
+      <text class="help-button-detail">找专业行家帮你砍砍价</text>      
+    </view>
+    <view class="help-button" bindtap="handleOpenPopupLayer">
+      <text>帮你 <text class="help-button-main">定制</text></text>
+      <text class="help-button-detail">提交需求量身定制</text>      
+    </view>
+  </view>
+  <item-title mainTitle="加盟我帮你" redText="{{joinNum}}" subTitle=" 人已经加盟成功" />  
+  <view class="brands">
+    <ul class="brand-list">
+      <li class="brand" wx:for="{{brands}}" wx:key="{{index}}">
+        <brand-container brand="{{item}}" />
+      </li>
+    </ul>
+  </view>
+  <no-more noMore="{{noMore}}" noMoreText="没有更多了，请移驾到分类中查询更多项目" />
+  <popup-layer id="popup-layer" pageTitle="平台首页" />
+</view>

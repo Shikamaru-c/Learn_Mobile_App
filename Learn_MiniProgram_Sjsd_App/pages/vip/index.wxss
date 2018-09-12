@@ -1,0 +1,54 @@
+/* pages/my/index.wxss */
+.vip {
+  background: #f6f6f6;
+  min-height: 100vh;
+}
+.vip-header {
+  background: #dd254d;
+  text-align: center;
+  padding: 20px;
+}
+.vip-header image {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+.vip-header text {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/*  vip-info  */
+.vip-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background: #fff;
+}
+.vip-info text {
+  flex: 1;
+  text-align: center;
+}
+
+/*  site-info  */
+.site-info {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 14px;
+}
+.site-info text {
+  display: block;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.site-info text:last-child {
+  border-bottom: none;
+}
+
+button.sign {
+  margin-top: 18px;
+  background: #fff;
+  color: #ff3b30;
+}

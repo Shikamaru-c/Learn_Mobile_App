@@ -1,0 +1,33 @@
+.reset-password-form {
+  display: block;
+  padding: 14px;
+}
+.reset-password-form view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.reset-password-form input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+}
+.reset-password-form button {
+  padding: 5px 0;
+  font-size: 15px;
+  background: #007aff;
+  border: none;
+  color: #fff;
+}
+.reset-password-form .code-button {
+  width: 25%;
+}
+.reset-password-form .code-input {
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+.submit-button {
+  margin-top: 20px;
+}

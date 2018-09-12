@@ -1,0 +1,10 @@
+<!--pages/brandlist/index.wxml-->
+<view class="brandlist">
+  <view class="brands">
+    <ul class="brand-list">
+      <li class="brand" wx:for="{{brands}}" wx:key="{{index}}">
+        <brand-container brand="{{item}}" />
+      </li>
+    </ul>
+  </view>
+</view>

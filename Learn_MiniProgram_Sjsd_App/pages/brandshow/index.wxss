@@ -1,0 +1,237 @@
+/* pages/brandshow/index.wxss */
+.brandshow {
+  background: #f6f6f6;
+}
+
+/*  brand-header  */
+.brand-header {
+  padding: 14px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.brand-header-top {
+  border-bottom: 1px solid #f6f6f6;
+  padding-bottom: 5px;
+}
+.brand-ptrz {
+  display: inline-block;
+  padding: 2px 5px;
+  margin-right: 10px;
+  color: #fff;
+  background: #45bb45;
+}
+/*  brand-header-bottom  */
+.brand-header-bottom {
+  position: relative;
+  margin-top: 10px;
+  font-size: 13px;
+}
+/*  brand-jmjs  */
+.brand-jmjs {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.brand-jmjs-inner {
+  display: flex;
+  height: 18px;
+  border: 1px solid #fa4d0b;
+  color: #fa4d0b;
+}
+.brand-jmjs-left {
+  padding: 0 5px;
+  background: #fa4d0b;
+  color: #fff;
+}
+.brand-jmjs-right {
+  padding: 0 5px;
+}
+/*  brand-tags  */
+.brand-tags > text {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 5px;
+  margin-right: 5px;
+}
+.brand-blue-tag {
+  border-color: #2bb2f5;
+  color: #2bb2f5;
+}
+/*  brand-button  */
+.brand-consult {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #dd524d;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+/*  brand-product  */
+.brand-product {
+  padding: 14px;
+  background: #fff;
+}
+.brand-product-items {
+  display: flex;
+  justify-content: space-between;
+}
+.brand-product-items > text {
+  text-align: center;
+  padding: 9px 14px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #dd524d;
+  color: #dd524d;
+  border-radius: 18px;
+}
+.brand-product-items > text.disabled-item {
+  color: #333;
+  border-color: #ccc;
+}
+
+/*  brand-section-title  */
+.brand-section-title {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/*  brand-jmfy  */
+.brand-jmfy {
+  background: #fff;
+}
+.brand-jmfy .brand-jmfy-count {
+  display: block;
+  padding-left: 20px;
+  line-height: 40px;
+  border-bottom: 1px solid #f6f6f6;  
+}
+.brand-jmfy > view {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f6f6f6;
+}
+.brand-jmfy > view text {
+  width: 50%;
+  font-size: 13px;
+  line-height: 30px;
+  color: #666;
+}
+.brand-jmfy > view text:first-child {
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.brand-jmfy-extra {
+  line-height: 30px;
+  font-size: 13px;
+  color: #666;
+  padding: 20px;
+}
+.brand-jmfy-consult {
+  display: inline-block;
+  text-align: center;
+  padding: 9px 14px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #007aff;
+  border-radius: 18px;
+  background: none;
+}
+
+/*  brand-article  */
+.brand-article {
+  background: #fff;
+}
+
+/*  brand-consult-history  */
+.brand-consult-history {
+  padding: 10px 20px;
+  background: #fff;
+}
+.brand-consult-history li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.brand-consult-history li:last-child {
+  margin-bottom: 0;
+}
+.brand-consult-history .avatar-wrapper {
+  width: 20%;
+}
+.brand-consult-history image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.brand-consult-history .content-wrapper {
+  flex: 1;
+  margin-left: 20px;
+}
+.brand-consult-history li text {
+  display: block;
+}
+.brand-consult-history .desc {
+  font-size: 12px;
+  color: #666;
+}
+
+/*  brand-guess  */
+.brand-guess {
+  padding: 14px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 45px;
+}
+.brand-guess ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.brand-guess li {
+  width: 33%;
+}
+.brand-guess image {
+  width: 100%;
+  height: 90px;
+}
+.brand-guess text {
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*  brand-bottom-bar  */
+.brand-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  height: 47px;
+  line-height: 47px;
+  background: #f6f6f6;
+  border-top: 1px solid #ccc;
+}
+.brand-bottom-bar text {
+  width: 25%;
+  height: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: #666
+}
+.brand-bottom-bar text:last-child {
+  width: 50%;
+  background: #dd524d;
+  color: #fff;
+}

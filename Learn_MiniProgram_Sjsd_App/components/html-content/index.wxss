@@ -1,0 +1,7 @@
+/* components/html-content/index.wxss */
+@import '../../utils/wxParse/wxParse.wxss';
+
+.html-content {
+  padding: 20px 10px;
+  background: #fff;
+}

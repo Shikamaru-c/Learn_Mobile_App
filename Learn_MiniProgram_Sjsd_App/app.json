@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/index",
+    "pages/vip/index",
+    "pages/brandlist/index",
+    "pages/brandshow/index",
+    "pages/signin/index",
+    "pages/signup/index",
+    "pages/resetPassword/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/vip/index",
+        "text": "会员中心"
+      }
+    ],
+    "selectedColor": "#007aff"
+  },
+  "window":{
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商机速递",
+    "navigationBarTextStyle": "black"
+  }
+}

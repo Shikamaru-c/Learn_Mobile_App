@@ -1,0 +1,4 @@
+  <view class="item-title">
+    <text class="main-title">{{mainTitle}}</text>
+    <text class="sub-title"><text class="sub-title-num">{{redText}}</text>{{subTitle}}</text>
+  </view>

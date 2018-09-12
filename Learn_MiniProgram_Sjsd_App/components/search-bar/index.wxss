@@ -1,0 +1,11 @@
+/*  search-bar  */
+.search-bar {
+  background: #fff;
+  padding: 10px;
+}
+.search-bar input {
+  background: #f6f6f6;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5px;
+}

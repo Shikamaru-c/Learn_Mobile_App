@@ -1,0 +1,27 @@
+/*  consult-form  */
+.consult-form {
+  padding: 14px;
+  background: #fff;
+}
+.consult-form view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;  
+}
+.consult-form label {
+  width: 20%;
+}
+.consult-form input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+}
+.consult-form button {
+  font-size: 15px;
+  padding: 5px 0;
+  background: #dd524d;
+  border: none;
+  color: #fff;
+}

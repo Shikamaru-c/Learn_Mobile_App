@@ -1,0 +1,26 @@
+<view class="consult-form">
+  <form bindsubmit="formSubmit">
+    <view>
+      <label>姓名</label>
+      <input type="text"
+        placeholder="请输入姓名"
+        name="name"
+      ></input>
+    </view>
+    <view>
+      <label>电话</label>
+      <input type="text"
+        placeholder="请输入电话"
+        name="tel"
+      ></input>
+    </view>
+    <view>
+      <label>内容</label>
+      <input type="text"
+        placeholder="请输入内容"
+        name="content"
+      ></input>
+    </view>
+    <button form-type="submit">提交资料</button>
+  </form>
+</view>

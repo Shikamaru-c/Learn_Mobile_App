@@ -1,0 +1,61 @@
+<view class="category">
+  <item-title mainTitle="专题分类" />
+  <view class="brands-table">
+    <view>
+      <navigator url="/pages/brandlist/index?catid=11">
+        <image mode="aspectFit" src="/images/ico1.png"></image>
+        美食
+      </navigator>
+      <navigator url="/pages/brandlist/index?catid=12">        
+        <image mode="aspectFit" src="/images/ico2.png"></image>
+        火锅
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=13">        
+        <image mode="aspectFit" src="/images/ico3.png"></image>
+        快餐
+      </navigator>        
+    </view>
+    <view>
+      <navigator url="/pages/brandlist/index?catid=14">        
+        <image mode="aspectFit" src="/images/ico4.png"></image>
+        小吃
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=15">        
+        <image mode="aspectFit" src="/images/ico5.png"></image>
+        麻辣烫
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=16">        
+        <image mode="aspectFit" src="/images/ico6.png"></image>
+        饮品
+      </navigator>  
+    </view>
+    <view>
+      <navigator url="/pages/brandlist/index?catid=17">        
+        <image mode="aspectFit" src="/images/ico7.png"></image>
+        奶茶
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=18">        
+        <image mode="aspectFit" src="/images/ico8.png"></image>
+        咖啡
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=19">        
+        <image mode="aspectFit" src="/images/ico9.png"></image>
+        水果茶
+      </navigator>  
+    </view>
+    <view>
+      <navigator url="/pages/brandlist/index?catid=22">        
+        <image mode="aspectFit" src="/images/ico11.png"></image>
+        汉堡
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=23">        
+        <image mode="aspectFit" src="/images/ico12.png"></image>
+        披萨
+      </navigator>  
+      <navigator url="/pages/brandlist/index?catid=21">        
+        <image mode="aspectFit" src="/images/ico13.png"></image>
+        烧烤
+      </navigator>  
+    </view>
+  </view>
+</view>

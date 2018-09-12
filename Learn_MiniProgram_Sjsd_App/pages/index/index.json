@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "商机速递",
+  "backgroundColor": "#f6f6f6",
+  "usingComponents": {
+    "brand-container": "/components/brand-container/index",
+    "search-bar": "/components/search-bar/index",
+    "item-title": "/components/item-title/index",
+    "popup-layer": "/components/popup-layer/index",
+    "no-more": "/components/no-more/index"
+  }
+}

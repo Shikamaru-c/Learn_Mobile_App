@@ -1,0 +1,30 @@
+<view class="signup">
+  <form class="signup-form" bindsubmit="handleSubmitSignup">
+    <view>
+      <input type="text"
+        placeholder="请输入手机号"
+        name="username"
+        bindblur="handleChangeUsername"
+      ></input>
+    </view>
+    <view>
+      <input type="text"
+        placeholder="验证码"
+        name="code"
+        class="code-input"
+      >
+      </input>
+      <button class="code-button" bindtap="handleGetCode">发送</button>
+    </view>
+    <view>
+      <input type="password"
+        placeholder="设置密码：字母加数字至少6位"
+        name="password"
+      ></input>
+    </view>
+    <text class="protocol">
+      我已同意并阅读《商机速递服务条款》
+    </text>
+    <button form-type="submit">注册</button>
+  </form>
+</view>

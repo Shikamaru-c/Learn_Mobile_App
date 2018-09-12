@@ -1,0 +1,114 @@
+<!--pages/brandshow/index.wxml-->
+<view class="brandshow">
+   <swiper 
+    indicator-dots=true
+    autoplay=true
+    circular=true
+  >
+    <block wx:for="{{detail.pictureurls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item.url}}" style="width: 100%;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="brand-header">
+    <view class="brand-header-top">
+      <text class="brand-ptrz">平台认证</text>
+      <text>{{detail.title}}</text>
+    </view>
+    <view class="brand-header-bottom">
+      <view class="brand-jmjs">
+        <view class="brand-jmjs-inner">
+          <text class="brand-jmjs-left">现金</text>
+          <text class="brand-jmjs-right">加盟即送{{detail.price}}元</text>
+        </view>
+      </view>
+      <view class="brand-tags">
+        <text class="brand-blue-tag">加盟扶持</text>
+      </view>
+      <button class="brand-consult" bindtap="handleScrollToConsult">立即咨询</button>
+    </view>
+  </view>
+  <view class="brand-product">
+    <text>【经营产品】</text>
+    <view class="brand-product-items">
+      <text>官方认证</text>
+      <text>培训支持</text>
+      <text>开店支持</text>      
+    </view>
+    <view class="brand-product-items">
+      <text>运营支持</text>
+      <text>实地选址</text>
+      <text class="disabled-item">上门带店</text>      
+    </view>
+  </view>
+  <view class="brand-section-title">
+    <text>加盟费用</text>
+  </view>
+  <view class="brand-jmfy">
+    <text class="brand-jmfy-count">初期预估投入{{countJmfy}}万元
+    </text>
+    <view>
+      <text>加盟费</text>
+      <text>{{detail.jmprice}}万</text>
+    </view>
+    <view>
+      <text>保证金</text>
+      <text>{{detail.bzprice}}万</text>
+    </view>
+    <view>
+      <text>设备费</text>
+      <text>{{detail.sbprice}}万</text>
+    </view>
+    <view>
+      <text>其他费用</text>
+      <text>{{detail.oprice}}万</text>
+    </view>
+    <text class="brand-jmfy-extra">以上费用为预估，不含房租，具体费用新闻企业</text>
+    <button class="brand-jmfy-consult">在线客服</button>
+  </view>
+  <view class="brand-section-title">
+    <text>项目概况</text>
+  </view>
+  <html-content htmlContent="{{detail.content}}" />
+  <view class="brand-section-title">
+    <text>咨询记录 | 1025人已经成功加盟</text>
+  </view>
+  <view class="brand-consult-history">
+    <ul>
+      <li wx:for="{{consultHistory}}" wx:key="{{index}}">
+        <view class="avatar-wrapper">
+          <image src="/images/avatar.jpg"></image>
+        </view>
+        <view class="content-wrapper">
+          <text>{{item.keywords}}</text>
+          <text class="desc">{{item.title}}</text>
+        </view>
+      </li>
+    </ul>
+  </view>
+  <view class="brand-section-title" id="consult-form">
+    <text>我要咨询</text>
+  </view>
+  <consult-form pageTitle="{{pageTitle}}" />
+  <view class="brand-section-title">
+    <text>猜你喜欢</text>
+  </view>
+  <view class="brand-guess">
+    <ul>
+      <li wx:for="{{guessBrands}}" wx:key="{{index}}">
+        <navigator url="{{'/pages/brandshow/index?catid=' + item.catid + '&id=' + item.id}}">
+          <image src="{{item.thumb}}"></image>
+          <text>{{item.title}}</text>
+        </navigator>
+      </li>
+    </ul>
+  </view>
+  <view class="brand-bottom-bar">
+    <text bindtap="handleOpenPopupLayer">咨询</text>
+    <text wx:if="{{!isConcern}}" bindtap="handleConcern">关注</text>
+    <text wx:else bindtap="handleConcern" style="color: red;">关注</text>
+    <text bindtap="handleOpenPopupLayer">获取开店方案</text>
+  </view>
+  <popup-layer id="popup-layer" pageTitle="{{pageTitle}}" />
+</view>

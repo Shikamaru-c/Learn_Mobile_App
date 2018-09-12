@@ -1,0 +1,6 @@
+<view wx:if="{{showPopupLayer}}" class="popup-layer">
+  <view class="mask" bindtap="handleClosePopupLayer"></view>
+  <view class="popup-form-wrapper">
+    <consult-form pageTitle="{{pageTitle}}" bind:closePopupLayer="handleClosePopupLayer" />
+  </view>
+</view>

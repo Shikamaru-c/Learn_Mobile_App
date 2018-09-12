@@ -1,0 +1,36 @@
+.signin-form {
+  display: block;
+  padding: 14px;
+}
+.signin-form view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;  
+}
+.signin-form label {
+  width: 20%;
+}
+.signin-form input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+}
+.signin-form .extra-nav {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+}
+.extra-nav navigator {
+  display: inline;
+  color: #007aff;
+}
+.signin-form button {
+  font-size: 15px;
+  padding: 5px 0;
+  background: #007aff;
+  border: none;
+  color: #fff;
+}

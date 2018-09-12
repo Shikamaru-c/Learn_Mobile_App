@@ -1,0 +1,26 @@
+<!--pages/signin/index.wxml-->
+<view class="signin">
+  <form class="signin-form" bindsubmit="handleSubmitSignin">
+    <view>
+      <label>账号</label>
+      <input type="text"
+        placeholder="请输入账号"
+        name="username"
+      ></input>
+    </view>
+    <view>
+      <label>密码</label>
+      <input type="password"
+        placeholder="请输入密码"
+        name="password"
+      >
+      </input>
+    </view>
+    <view class="extra-nav">
+      <navigator url="/pages/signup/index">注册账号</navigator>
+      |
+      <navigator url="/pages/resetPassword/index">忘记密码</navigator>
+      </view>
+    <button form-type="submit">登录</button>
+  </form>
+</view>

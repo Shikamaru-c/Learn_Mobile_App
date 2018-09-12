@@ -1,0 +1,8 @@
+<view class="search-bar">
+  <input type="text"
+    placeholder="搜索感兴趣的品牌"
+    confirm-type="搜索"
+    placeholder-style="text-align: center;"
+    bindconfirm="handleSearch"
+  ></input>
+</view>
